@@ -1,0 +1,15 @@
+<div class="search-bar">
+  <input type="text" placeholder="Search for employees" #filter>
+  <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+</div>
+
+<section class="person" *ngFor="let employeeInfo of filteredEmployeeList">
+  <img class="person-photo" [src]="employeeInfo.photo">
+  <h2 class="person-heading">{{ employeeInfo.name }}</h2>
+  <div class="subtext">
+    <p class="person-location">{{ employeeInfo.city }}</p>
+    <p class="person-rating">{{ employeeInfo.rating }}</p>
+    <p class="person-skills">{{ employeeInfo.skills }}</p>
+  </div>
+  <a [routerLink]="['/employee-details', employeeInfo.id]">View Details</a>
+</section>

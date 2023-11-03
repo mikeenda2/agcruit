@@ -1,0 +1,10 @@
+<section class="listings">
+  <h2>{{jobListing.Title}}</h2>
+  <p>{{jobListing.city}}</p>
+  <p>{{jobListing.pay}}</p>
+  <p>{{jobListing.description}}</p>
+  <p>{{jobListing.date}}</p>
+
+  <a [routerLink] = "['/job-details', jobListing.id]"> Job details</a>
+
+</section>

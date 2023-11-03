@@ -1,0 +1,29 @@
+<article>
+  <section class="job-description">
+    <h2 class="job-heading">{{jobListing?.Title}}</h2>
+    <p class="job-location">{{jobListing?.city}}</p>
+  </section>
+  <section class="job-features">
+    <h2 class="section-heading">About this job</h2>
+    <ul>
+      <li>Pay: ${{jobListing?.pay}}</li>
+      <li>Description: {{jobListing?.description}}</li>
+      <li>Date: {{jobListing?.date}}</li>
+    </ul>
+  </section>
+
+  <section class="job-apply">
+    <h2 class="section-heading">Message About this Job</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="message">Message</label>
+      <input id="first-name" type="text" formControlName="firstName">
+
+      <label for="phone-number">Phone Number</label>
+      <input id="last-name" type="text" formControlName="lastName">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email">
+      <button type="submit" class="primary">Apply now</button>
+    </form>
+  </section>
+</article>

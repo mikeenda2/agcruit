@@ -1,0 +1,25 @@
+.listings {
+  flex: 1; /* Allow the person container to grow and fill available space */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: hsl(0, 6%, 72%);
+  overflow: hidden;
+  display: grid;
+  flex-direction: row; /* Horizontal layout */
+}
+
+.listings p{
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #666;
+}
+
+.listing h2{
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}

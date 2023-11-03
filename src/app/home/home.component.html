@@ -1,0 +1,21 @@
+
+<section class="results">
+  <app-employee-page [employeeInfoList]="employeeInfoList"></app-employee-page>
+</section>
+  <app-job-page
+  *ngFor="let jobList of jobListingList"
+   [jobListing] = "jobList">
+   <div class="search-bar">
+  </div>
+  </app-job-page>
+
+  <div class="search-bar">
+    <!-- <form (ngSubmit)="addJobToList()">
+      <input type="text" placeholder="Title" name="title" [(ngModel)]="newJob.Title" required>
+      <input type="text" placeholder="City" name="city" [(ngModel)]="newJob.city" required>
+      <input type="number" placeholder="Pay" name="pay" [(ngModel)]="newJob.pay" required>
+      <input type="text" placeholder="Description" name="description" [(ngModel)]="newJob.description" required>
+      <input type="text" placeholder="Date" name="date" [(ngModel)]="newJob.date" required>
+      <button type="submit">Add Job Listing</button>
+    </form> -->
+  </div>

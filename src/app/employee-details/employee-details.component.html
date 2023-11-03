@@ -1,0 +1,30 @@
+<article>
+  <img class="employee-photo" [src]="employeeInfo?.photo" alt="Photo of {{employeeInfo?.name}}" />
+  <section class="employee-description">
+    <h2 class="employee-heading">{{employeeInfo?.name}}</h2>
+    <p class="employee-location">{{employeeInfo?.city}}</p>
+  </section>
+  <section class="employee-features">
+    <h2 class="section-heading">About this employee</h2>
+    <ul>
+      <li>Rating: {{employeeInfo?.rating}}</li>
+      <li>Skills: {{employeeInfo?.skills?.join(', ')}}</li>
+      <li>Availability: {{employeeInfo?.availability}}</li>
+    </ul>
+  </section>
+
+  <section class="listing-apply">
+    <h2 class="section-heading">Send Message to {{employeeInfo?.name}}</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="message">Message</label>
+      <input id="first-name" type="text" formControlName="firstName">
+
+      <label for="phone-number">Phone Number</label>
+      <input id="last-name" type="text" formControlName="lastName">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email">
+      <button type="submit" class="primary">Apply now</button>
+    </form>
+  </section>
+</article>
