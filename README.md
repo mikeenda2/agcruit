@@ -4,7 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. download the project zip to computer. Unzip folder.
+2. Open Visual Studio code
+3. Go to File -> add the folder to workspace -> (click on the folder you just unzipped) -> hit add
+4. in your VS explorer, right click on the 'my-app' folder -> 'Open in integrated terminal'
+5. run this command in your terminal --> npm install -g @angular/cli
+6. then this one -> ng serve
+
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
